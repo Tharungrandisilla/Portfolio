@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><style>
+html,body{margin:0;width:1200px;height:630px;background:#0A0C10;font-family:'Segoe UI',Arial,sans-serif;color:#E8ECF2;overflow:hidden}
+svg{position:absolute;inset:0}
+.t{position:absolute;left:70px;top:190px}
+.k{font:600 22px Consolas,monospace;color:#8B93A1}
+h1{font:700 92px/1 'Segoe UI',Arial;margin:14px 0 10px;letter-spacing:-3px;background:linear-gradient(90deg,#3EE6D4,#FFB547);-webkit-background-clip:text;color:transparent}
+.n{font:600 38px 'Segoe UI';margin:0}
+.s{font:500 26px Consolas,monospace;color:#FFB547;margin-top:18px}
+</style>
+<svg width="1200" height="630"><defs><radialGradient id="g" cx="78%" cy="45%" r="55%"><stop offset="0" stop-color="#3EE6D4" stop-opacity=".22"/><stop offset="1" stop-color="#0A0C10" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="630" fill="url(#g)"/>
+<g id="net"></g></svg>
+<div class="t"><div class="k">layer_00 / input &nbsp;[forward_pass]</div><h1>THARUN</h1><p class="n">Tharun Venkata Sai Kumar</p><div class="s">Software Developer · AI/ML</div></div>
+<script>
+let a=1;const r=()=>(a=(a*16807)%2147483647)/2147483647;const L=[[760,5],[850,6],[940,7],[1030,6],[1120,4]];const pts=L.map(([x,n])=>Array.from({length:n},(_,i)=>[x+r()*20,90+i*(450/n)+r()*30+20]));
+let s='';for(let l=0;l<pts.length-1;l++)for(const p of pts[l])for(const q of pts[l+1])if(r()<.45)s+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="#3EE6D4" stroke-opacity=".28"/>`;
+pts.flat().forEach(([x,y],i)=>s+=`<circle cx="${x}" cy="${y}" r="${i%7==0?9:6}" fill="${i%7==0?'#FFB547':'#3EE6D4'}"/>`);
+document.getElementById('net').innerHTML=s;
+</script>
